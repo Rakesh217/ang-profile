@@ -1,0 +1,14 @@
+<form [formGroup]="profileDetail" (ngSubmit)="onSubmit()">
+    <label>
+        FirstName:
+        <input type="text"
+        formControlName="firstName" required>
+    </label>
+    <label>
+        LastName:
+        <input type="text" formControlName="firstName">
+    </label>
+    <button (click)="onSubmit()">
+        Submit
+    </button>
+</form>
