@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder} from '@angular/forms';
+import {FormBuilder, FormControl} from '@angular/forms';
 import {Validators} from '@angular/forms';
 @Component({
   selector: 'app-profile-detail',
@@ -11,6 +11,8 @@ export class ProfileDetailComponent implements OnInit {
     firstName: ['', Validators.required],
     lastName: ['']
   })
+  fName = new FormControl('');
+  lName = new FormControl('');
   constructor(private fb: FormBuilder) { }
   ngOnInit(): void {
   }

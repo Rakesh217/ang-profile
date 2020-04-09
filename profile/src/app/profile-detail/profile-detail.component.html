@@ -2,13 +2,19 @@
     <label>
         FirstName:
         <input type="text"
-        formControlName="firstName" required>
+        [formControl]="fName" required>
     </label>
     <label>
         LastName:
-        <input type="text" formControlName="firstName">
+        <input type="text"
+        [formControl]="lName">
     </label>
     <button (click)="onSubmit()">
         Submit
     </button>
 </form>
+<h1><b>Values</b></h1>
+<p>
+    FirstName: {{fName.value}}
+    LastName: {{lName.value}}
+</p>
