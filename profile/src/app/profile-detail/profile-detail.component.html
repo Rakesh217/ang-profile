@@ -1,6 +1,7 @@
 <h2>Details</h2>
 <div>
   <ul *ngFor="let detail of details">
-    <li>{{detail.name}}</li>
-  </ul>
+  <app-profile [data]="detail"></app-profile>
+  
+</ul>
 </div>
